@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sum of Arguments</title>
+    </head>
+    <body>
+        <h2>Sum of Arguments</h2>
+        <p>In this website, we are going to add some numbers using arguments in JavaScript.</p>
+        <p>Numbers are: 890, 230, 789, 472, 1001, 969</p>
+        <button onclick="findSum">Calculate the Sum</button><br><br>
+        <p>Numbers for product: 7, 9, 20</p>
+        <button onclick="findProduct">Calculate the Product</button>
+        <p id="math"></p>
+        <p id="sine"></p>
+        <p id="cosine"></p>
+        <p id="tangent"></p>
+        <script type="text/javascript">
+            function findSum() {
+                var sum = 0;
+                for(i = 0; i < arguments.length; i++) {
+                        sum += arguments[i];
+                    }
+                return sum;
+            }
+            function findProduct() {
+                var product = 1;
+                for(i = 0; i < arguments.length; i++) {
+                    product *= arguments[i];
+                }
+                return product;
+            }
+            document.getElementById("math").innerHTML = findSum(890, 230, 789, 472, 1001, 969);
+            document.write(findProduct(7, 9, 20));
+        </script>
+    </body>
+</html>
