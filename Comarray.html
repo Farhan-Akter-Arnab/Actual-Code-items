@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Combined Activity on Array</title>
+    </head>
+    <body>
+        <h2>Application of Arrays and Call stacks</h2>
+        <p>We will apply the knowledge of arrays and call stacks in Mathematics</p>
+        <p id="realnum1"></p>
+        <p id="realnum2"></p>
+        <script>
+            var num = [
+                39.792,
+                80.448
+            ]
+            var num1 = Math.round(num[0]);
+            var num2 = Math.floor(num[1]);
+            function add (a,b){
+                return a + b;
+            }
+            function arithmean (a,b){
+                return add(a,b)/2;
+            }
+            function product (a,b){
+                return a * b;
+            }
+            function geomean (a,b){
+                return product(a,b)**(1/2);
+            }
+            let result1 = arithmean(num1, num2);
+            let result2 = geomean(num1, num2);
+            document.getElementById("realnum1").innerHTML = result1;
+            document.getElementById("realnum2").innerHTML = result2;
+        </script>
+    </body>
+</html>
