@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Call Stacks in JavaScript Arrays</title>
+    </head>
+    <body>
+        <h2>JavaScript Arrays Call Stacks</h2>
+        <p>Do a calculation then display the result</p>
+        <p id="demo"></p>
+        <p id="demoa"></p>
+        <script>
+            function add(a,b) {
+                return a + b;
+            }
+            function arithmetic_mean (a,b) {
+                return add(a,b)/2;
+            }
+            function product (a,b) {
+                return a * b;
+            }
+            function geometric_mean (a,b) {
+                return product(a,b)**(1/2)
+            }
+            let result1 = arithmetic_mean(10, 20);
+            let result2 = geometric_mean(10, 20);
+            document.getElementById("demo").innerHTML = result1;
+            document.getElementById("demoa").innerHTML = result2;
+        </script>
+    </body>
+</html>
