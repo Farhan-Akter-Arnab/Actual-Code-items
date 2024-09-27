@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object data properties and array</title>
+    </head>
+    <body>
+        <h2>Object Data properties and arrays</h2>
+        <p>Here we will see the use of data properties and arrays.</p>
+        <script>
+            var object = {
+                name: "cuckoo",
+                age: 9,
+                hobby: "laying in other's nests",
+                fav_thing: "HCOO-COOH"
+            };
+            var color = ["white", "black", "green", "blue", "red", "brown"];
+            document.write("The name of thing is "+object.name+" and its hobby is "+object.hobby + "<br>");
+            document.write("Its favourite colour is "+color[2] + "<br>");
+            document.write("Its favourite thing is "+object.fav_thing+" or Oxalic Acid!" + "<br>")
+            document.write("Before poping, " + color.join(",") + "<br>");
+            document.write(color.pop() + "<br>");
+            document.write("After poping : " + color.join(", "))
+        </script>
+    </body>
+</html>
