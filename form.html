@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Form</title>
+    </head>
+    <body>
+        <h1>Form Verification using JS</h1>
+        <hr>
+        <form id="LoginForm" onsubmit="validate(event)">
+            <fieldset>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" minlength="8">
+                </div>
+                <div>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="12" max="200">
+                </div>
+                <button type="submit">Login</button>
+            </fieldset>
+        </form>
+        <script src="form.js"></script>
+    </body>
+</html>
