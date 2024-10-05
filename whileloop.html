@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>While Loop</title>
+    </head>
+    <body>
+        <h2>JavaScript While Loop</h2>
+        <p id="number"></p>
+        <script>
+            var text =" ";
+            var i;
+            {
+                let i = -20;
+                while (i <= 20) {
+                text += "<br>The number is" + i;
+                i++;
+                }
+            }
+            document.getElementById("number").innerHTML = text;
+            document.write("The value of i outside the block is: " + i);
+        </script>
+    </body>
+</html>
