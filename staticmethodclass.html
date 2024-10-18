@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Static Methods in Class</title>
+    </head>
+    <body>
+        <p>A static method is created with the <code>static</code> keyword, and you can only call the method on the class itself.</p>
+        <p id="hello"></p>
+        <p id="hi"></p>
+        <p id="welcome"></p>
+        <script>
+            class Student {
+                constructor(name) {
+                    this.studentname = name;
+                }
+                static hello() {
+                    return "Hello!!"
+                }
+                static welcome(x) {
+                    return "Welcome " + x.studentname;
+                }
+                hi() {
+                    return "Hi " + this.studentname;
+                }
+            }
+            myname = new Student("Mathematics");
+            document.getElementById("hello").innerHTML = Student.hello();
+            document.getElementById("hi").innerHTML = myname.hi();
+            document.getElementById("welcome").innerHTML = Student.welcome(myname);
+        </script>
+    </body>
+</html>
