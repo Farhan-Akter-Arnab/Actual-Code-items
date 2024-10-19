@@ -1,3 +1,4 @@
+alert("Numbers are being specified earlier!!!")
 var numbers = [50, -27.5, 19, 89, 403, 1000, 6283];
 document.getElementById("question").innerHTML = "The numbers are : " + numbers;
 function ascending () {
