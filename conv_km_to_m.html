@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Conversion from km to m</title>
+</head>
+
+<body>
+    <h2>Unit conversion</h2>
+    <p>Click the following button transfrom any length quantity from kilometer to meter.</p>
+    <button type="button" onclick="kmtom()">kilometer to meter</button><br>
+    <p id="info"></p>
+    <p id="kmtom"></p>
+    <script>
+        var values = [5, 0.25, 0.085, 30, 10, 2.548];
+        document.getElementById("info").innerHTML = "The values are " + values;
+        function kmtom(value) {
+            return value * 1000;
+        }
+        var obtained = values.map(kmtom);
+        document.getElementById("kmtom").innerHTML = "The converted values from km to m are: " + obtained;
+    </script>
+</body>
+
+</html>
