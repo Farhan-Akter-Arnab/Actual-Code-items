@@ -7,13 +7,14 @@ function setScreenValue(value) {
 function calculateResult() {
     const resultElement = document.getElementById("result");
     const expression = resultElement.value.trim();
-}
-if (expression === '') {
-    resultElement.value = 'Enter an expression';
-    return;
-}
-try {
-    resultElement.value = eval(expression);
-} catch(e) {
-    resultElement.value = 'Invalid expression';
+
+    if (expression === '') {
+        resultElement.value = 'Enter an expression';
+        return;
+    }
+    try {
+        resultElement.value = eval(expression);
+    } catch (e) {
+        resultElement.value = 'Invalid expression';
+    }
 }
