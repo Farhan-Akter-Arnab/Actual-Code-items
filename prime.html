@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prime number Check</title>
+    </head>
+    <body>
+        <h1>Prime number checker</h1>
+        <script>
+            function prime(num) {
+                if (num <= 1) {
+                    return false;
+                }
+                for (i=2; i < num; i++) {
+                    if (num%i != 0) {
+                        document.write(num + " is a prime <div>");
+                        return true;
+                    }
+                    else {
+                        document.write(num + " is not prime <div>");
+                        return false;
+                    }
+                }
+            }
+            prime(3)
+            prime(4)
+            prime(12)
+            prime(23)
+        </script>
+    </body>
+</html>

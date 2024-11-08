@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Perimeter of different shapes</title>
+    </head>
+    <body>
+        <h2>Perimeter Calculator</h2>
+        <p>In this page, you can find out the area of various shapes. As this is a prompted website, therefore, please be mindful to start again if you want to use it again.</p>
+        <button onclick="perimeter()">Start here</button>
+        <script>
+            function perimeter() {
+                var choice = prompt("Welcome to Perimeter Calculator! \n Please Enter your choice: \n1. Perimeter of Rectangle. \n2. Perimeter of Square. \n3. Perimeter of Circle. \n4. Perimeter of Triangle.");
+                if (choice =='1') {
+                    var l = prompt('Enter the length');
+                    var b = prompt('Enter the breadth');
+                    var result = 2(Number(l) + Number(b));
+                    alert('The perimeter is ' + result + ' units');
+                }
+                if (choice == '2') {
+                    var a = prompt('Enter the length');
+                    var result = Number(a) * 4;
+                    alert('The perimeter is ' + result + ' units');
+                }
+                if (choice == '3') {
+                    var r = prompt('Enter the length');
+                    var result = 2 * Math.PI * Number(r);
+                    alert('The perimeter is ' + result + ' units');
+                }
+                if (choice == '4') {
+                    var a = prompt('Enter the first side');
+                    var b = prompt('Enter the second side');
+                    var c = prompt('Enter the third side');
+                    var result = Number(a) + Number(b) + Number(c);
+                    alert('The perimeter is ' + result + ' units');
+                }
+            }
+        </script>
+    </body>
+</html>
