@@ -1,0 +1,10 @@
+body {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#num {
+    font-size: 320 px;
+}
+#num:hover {
+    cursor: pointer;
+}
