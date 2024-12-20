@@ -1,0 +1,10 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#dice {
+    font-size: 320px;
+}
+#dive:hover {
+    cursor: pointer;
+}
