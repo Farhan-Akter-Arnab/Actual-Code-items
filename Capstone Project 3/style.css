@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #c8bb80;
+}
+.cover {
+    background-image: url("কান ধরে নিয়ে আসলাম রাতের আকাশ.jpg");
+    height: 400;
+    position: relative;
+    opacity: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.section {
+    text-align: left;
+    padding: 50px 80px;
+    background-color: #3d3d3e;
+    color: #ddd;
+}
+p{
+    font-size: 20px;
+    text-align: left;
+}
