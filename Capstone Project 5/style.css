@@ -1,0 +1,70 @@
+body {
+    background-color: #6dc5d1;
+    background-image: url("Mathematics\ Arslan\ Khan.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Kalinia Glaze", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings: "width", 100;
+    color: linen;
+    text-align: center;
+}
+.carousel-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.myslides{
+    display: none;
+    max-height: 100%;
+    max-width: 100%;
+}
+.azerbaycan {
+    background-color: white;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: navy;
+    padding: 7.5px;
+    text-align: center;
+}
+
+.topnav a {
+    color: khaki;
+    font-weight: bold;
+    padding: 7.5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border: 3px solid cornsilk;
+}
+
+.topnav a:hover {
+    background-color: dodgerblue;
+    color: white;
+    border-style: outset;
+}
+
+.topnav a.active {
+    background-color: orange;
+    color: teal;
+}
+
+.mather {
+    background-color: navy;
+    color: khaki;
+    font-weight: bold;
+    padding: 7.5px;
+    text-align: center;
+    border: 3px solid cornsilk;
+}
+
+.mather a:hover {
+    background-color: dodgerblue;
+    color: white;
+    border-style: outset;
+}
