@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,41 +17,63 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="calculator.css">
 </head>
+
 <body>
     <div class="topnav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="explore.html">Explore</a>
-        <a href="contact.html" class="active">Contact</a>
+        <a href="explore.html" class="active">Explore</a>
+        <a href="contact.html">Contact</a>
         <div id="Mathematical_Clock" onload="showTime()" style="text-align:right;"></div>
     </div>
     <h1>Mathematical Community</h1>
     <p>Welcome to the Mathematical World!</p>
-    <h4>Information</h4>
+    <h4>Starting journey of Mathematics</h4>
+    <p>Mathematics is nothing but a great journey towards a mysterious world of the beauty of the environment and their
+        patterns. However, it is our duty to start the journey completely ourselves. Only then one can find its true
+        beauty. Here are some links to guide you on your way:</p>
     <p>
-        <img src="download.jpeg" height="100">
-        <h5>The Mathematics</h5>
-        <img src="download (1).jpeg" height="300">
-        <p>Discovered: ~ 3000 BC</p>
-        <p>Periods: Ancient, Greek, Roman, Chinese, Muslim, Medieval, Renaissance, Modern</p>
-        <p>Availability: Across the World</p>
-        <p>Abundance: Extremely Abundant</p>
-    </p>
-    <br><br>
-    <p>
-        <form>
-            <fieldset>
-                <legend>Contact Form</legend>
-                <label>Enter your name: </label>
-                <input type="text" name="name"><br><br>
-                <label>Enter your phone number: </label>
-                <input type="tel" name="phone"><br><br>
-                <label>Enter your email: </label>
-                <input type="email" name="email"><br><br>
-                <input type="submit" id="submit"><br><br>
-            </fieldset>
-        </form>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Simple Calculator</h1>
+            <div class="row">
+                <input type="text" name="result" class="result" id="result" value="" placeholder="Result" readonly />
+                <input type="button" value="+" onclick="setScreenValue('+')" />
+            </div>
+            <div class="row">
+                
+                <input type="button" value="1" onclick="setScreenValue('1')" />
+                <input type="button" value="2" onclick="setScreenValue('2')" />
+                <input type="button" value="3" onclick="setScreenValue('3')" />
+                <input type="button" value="-" onclick="setScreenValue('-')" />
+            </div>
+            <div class="row">
+                <input type="button" value="4" onclick="setScreenValue('4')" />
+                <input type="button" value="5" onclick="setScreenValue('5')" />
+                <input type="button" value="6" onclick="setScreenValue('6')" />
+                <input type="button" value="x" onclick="setScreenValue('*')" />
+            </div>
+            <div class="row">
+                <input type="button" value="7" onclick="setScreenValue('7')" />
+                <input type="button" value="8" onclick="setScreenValue('8')" />
+                <input type="button" value="9" onclick="setScreenValue('9')" />
+                <input type="button" value="/" onclick="setScreenValue('/')" />
+            </div>
+            <div class="row">
+                <input type="button" value="%" onclick="setScreenValue('%')" />
+                <input type="button" value="0" onclick="setScreenValue('0')" />
+                <input type="button" value="." class="dot" onclick="setScreenValue('.')" />
+                <input type="button" value="=" onclick="calculateResult()" />
+            </div>
+            <div class="row">
+                <input type="button" value="CLEAR" onclick="clearScreen()" id="clear" class="clear-button" />
+            </div>
+        </div>
+
+        <a href="explore.html" style="background-color: black; color:orange; font-weight:bold; font-family:'Courier New', Courier, monospace; border: 2.5px solid orange; padding: 5px;">Return to Explore Page</a>
+    </div>
     </p>
     <br><br>
     <div class="footer">
@@ -59,6 +82,8 @@
         <p>Contact: +8801400044645</p>
         <p>Email: <a href="mailto:mathematicalhorse1453@gmail.com" id="email">mathematicalhorse1453@gmail.com</a></p>
     </div>
+    
+    <script src="calculator.js"></script>
     <script>
         function showTime() {
                 var date = new Date();
@@ -116,4 +141,5 @@
             showTime();
     </script>
 </body>
+
 </html>
