@@ -1,0 +1,5 @@
+print("Assalamu Alaikum World!")
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+number = input("Enter your favourite number: ")
+print("My name is ", name, " and I am ", age, " years old. My favourite number is ", number)
