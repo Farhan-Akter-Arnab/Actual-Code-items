@@ -1,3 +1,4 @@
+# take number as an input
 num = int(input("Enter the number: "))
 t = num
 numLen = 0
@@ -15,5 +16,9 @@ if numLen >= 4:
             midTwo = rem
         num = int(num/10)
         chk = chk + 1
-prod = midOne * midTwo
-print("\nProduct of Mid digits (" +str(midOne) + "*" + str(midTwo) +") = ", prod)
+    prod = midOne * midTwo
+    #display the result
+    print("\nProduct of Mid digits (" +str(midOne) + "*" + str(midTwo) +") = ", prod)
+
+else:
+    print("\n It's not a 4 or more than 4-digit number!")
