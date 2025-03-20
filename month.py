@@ -1,0 +1,15 @@
+import datetime
+month1 = datetime.date(2025, 1, 1).strftime('%B')
+month2 = datetime.date(2025, 2, 1).strftime('%B')
+month3 = datetime.date(2025, 3, 1).strftime('%B')
+month4 = datetime.date(2025, 4, 1).strftime('%B')
+month5 = datetime.date(2025, 5, 1).strftime('%B')
+month6 = datetime.date(2025, 6, 1).strftime('%B')
+month7 = datetime.date(2025, 7, 1).strftime('%B')
+month8 = datetime.date(2025, 8, 1).strftime('%B')
+month9 = datetime.date(2025, 9, 1).strftime('%B')
+month10 = datetime.date(2025, 10, 1).strftime('%B')
+month11 = datetime.date(2025, 11, 1).strftime('%B')
+month12 = datetime.date(2025, 12, 1).strftime('%B')
+month = [month1,month2, month3,month4,month5,month6,month7,month8,month9,month10,month11,month12]
+print(month)
