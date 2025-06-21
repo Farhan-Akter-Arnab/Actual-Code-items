@@ -61,4 +61,5 @@ def topwin():
     t1.place(x=264, y=200)
     t2.place(x=264, y=240)
     t3.place(x=264, y=280)
+    top.mainloop()
 root.mainloop()
