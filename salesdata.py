@@ -1,0 +1,33 @@
+import pandas as bamboo
+import matplotlib.pyplot as math
+data_bamboo = bamboo.read_csv('Company Sales Data.csv')
+print(data_bamboo)
+def line_chart():
+    math.plot(data_bamboo['month_number'], data_bamboo['total_profit'], marker='o', linewidth=3, color='red', markerfacecolor='black')
+    math.title('Total Profit Over Months')
+    math.xlabel('Months')
+    math.ylabel('Total Profit')
+    math.show()
+line_chart()
+def line_chart2():
+    math.plot(data_bamboo['month_number'], data_bamboo['facecream'], marker='o', linewidth=3, color='pink', markerfacecolor='dodgerblue', label='Face Cream')
+    math.plot(data_bamboo['month_number'], data_bamboo['facewash'], marker='o', linewidth=3, color='powderblue', markerfacecolor='dodgerblue', label='Face Wash')
+    math.plot(data_bamboo['month_number'], data_bamboo['toothpaste'], marker='o', linewidth=3, color='red', markerfacecolor='dodgerblue', label='Toothpaste')
+    math.plot(data_bamboo['month_number'], data_bamboo['bathingsoap'], marker='o', linewidth=3, color='forestgreen', markerfacecolor='dodgerblue', label='Bathing Soap')
+    math.plot(data_bamboo['month_number'], data_bamboo['shampoo'], marker='o', linewidth=3, color='navy', markerfacecolor='dodgerblue', label='Shampoo')
+    math.plot(data_bamboo['month_number'], data_bamboo['moisturizer'], marker='o', linewidth=3, color='skyblue', markerfacecolor='dodgerblue', label='Moisturizer')
+    math.title('Sales Data of All Products')
+    math.xlabel('Months')
+    math.ylabel('Sales')
+    math.legend()
+    math.show()
+line_chart2()
+def bar_chart():
+    math.bar(data_bamboo['month_number'], data_bamboo['facecream'], color='pink', label='Face Cream')
+    math.bar(data_bamboo['month_number'], data_bamboo['facewash'], color='powderblue', label='Face Wash')
+    math.title('Sales Data of Face Cream and Face Wash')
+    math.xlabel('Months')
+    math.ylabel('Sales')
+    math.legend()
+    math.show()
+bar_chart()
