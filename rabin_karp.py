@@ -1,5 +1,6 @@
 def searchPattern(pattern, text, q):
-    m, n, d = len(pattern), len(text), len(text)
+    m, n= len(pattern), len(text)
+    d = len(set(text))
     p, t, h, i, j = 0, 0, 1, 0, 0
     for i in range(m-1):
         h = (h * d) % q
