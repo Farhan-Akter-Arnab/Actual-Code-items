@@ -39,3 +39,10 @@ def constructST(arr, n):
     st = [0] * max_size
     constructSTUntil(arr, 0, n - 1, st, 0)
     return st
+if __name__ == "__main__":
+    arr = [1, 3, 5, 7, 9, 11]
+    n = len(arr)
+    st = constructST(arr, n)
+    print("Sum of values in given range = ", getSum(st, n, 1, 3))
+    updateValue(arr, st, n, 1, 10)
+    print("Updated sum of values in given range = ", getSum(st, n, 1, 3), end="")
